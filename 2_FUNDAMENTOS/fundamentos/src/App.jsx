@@ -1,10 +1,11 @@
+// Styles
+import './App.css'
 // Components
 import FirstComponent from './components/FirstComponet'
 import TemplateExpression from './components/TemplateExpressions'
 import MyComponent from './components/MyComponent'
 import Events from './components/Events'
-// Styles
-import './App.css'
+import Challenge from './components/Challenge'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <TemplateExpression />
       <MyComponent />
       <Events />
+      <Challenge />
     </>
   )
 }
