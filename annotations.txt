@@ -1,0 +1,9 @@
+npx create-react-app <NOME DO PROJETO> (Instala o react porém não é tão usado por não ter tanta performance)
+
+npm start (Inicia o servidor)
+
+npm create vite@latest (Instala o vários frameworks através do Vite, que por sua vez é muito mais rápido e mais interativo)
+
+    cd <local do projeto> (Navega para o projeto criado)
+    npm install ou npm i (instala as dependências)
+    npm run dev (cria o localhost)
