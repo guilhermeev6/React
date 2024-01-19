@@ -1,0 +1,10 @@
+form {
+  width: 200px;
+  margin: 0 auto; /*Automático para centralizar*/
+  text-align: left;
+}
+
+input, textarea, select {
+  display: block;
+  margin-top: 10px;
+}
