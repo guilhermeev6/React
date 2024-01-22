@@ -20,15 +20,31 @@ const stages = [
 ]
 
 function App() {
+  // O .name é o valorr dentro do objeto stage, logo, o useState estará com o valor 'useState("start")' pois o vetor está puxando o objeto 0 e sua propriedade name.
   const [gameStage, setGameStage] = useState(stages[0].name)
   const [words] = useState(wordsList)
-  console.log(words)
+  const [pickedWord, setPickedWord] = useState('')
+  const [picketCategory, setPicketCategory] = useState('')
+  const [letters, setLetters] = useState([])
+
+  const startGame = () =>{
+    setGameStage(stages[1].name)
+  }
+  
+  // Process the letter input
+  const verifyLetter = () => {
+    setGameStage(stages[2].name)
+  }
+
+  const retry = () => {
+    setGameStage(stages[0].name)    
+  }
 
   return (
     <div className='App'>
-      {gameStage === "start" && <StartScreen />}
-      {gameStage === "game" && <Game />}
-      {gameStage === "end" && <GameOver />}
+      {gameStage === "start" && <StartScreen startGame={startGame}/>}
+      {gameStage === "game" && <Game verifyLetter={verifyLetter} />}
+      {gameStage === "end" && <GameOver retry={retry} />}
     </div>
   )
 }
