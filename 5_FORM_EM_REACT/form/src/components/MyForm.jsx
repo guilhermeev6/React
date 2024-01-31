@@ -11,7 +11,7 @@ const MyForm = ({user}) => {
   
   //Esse evento vai puxar todas as informações da ação do input
   const handleName = (event) => {
-    // Para cada mudança, a variável name vai ser alterada atravéz da função setName.
+    // Para cada mudança no input, a variável name vai ser alterada atravéz da função setName.
     setName(event.target.value)
     // Se for apenas para salvar um valor, é melhor fazer inline assim como no email.
   }
